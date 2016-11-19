@@ -5,9 +5,11 @@ var program = require('commander')
 var Promise = require('bluebird')
 var request = Promise.promisify(require('request'), {multiArgs: true})
 var pdf = require('html-pdf')
+var fs = require('fs')
 var cheerio = require('cheerio')
 
 var makeChapterHTML = require('./utils').makeChapterHTML
+var pdfConf = require('./pdf-conf.json')
 
 program
   .arguments('<chapterID>')
@@ -36,8 +38,14 @@ defaultRequest(url)
 
       var filename = `${title}_-_${chapter}`.replace(/ /g, '_')
 
+      // Make the html page
+      fs.writeFile(`${process.cwd()}/${filename}.html`, chapterHTML, function (err) {
+        if (err) return console.log(err)
+        console.log(`Created HTML at ${process.cwd()}/${filename}.html`)
+      })
+
       // Make the pdf
-      pdf.create(chapterHTML).toFile(`${process.cwd()}/${filename}.pdf`, function (err, res) {
+      pdf.create(chapterHTML, pdfConf).toFile(`${process.cwd()}/${filename}.pdf`, function (err, res) {
         if (err) return console.log(err)
         console.log(`Created PDF at ${res.filename}`)
       })

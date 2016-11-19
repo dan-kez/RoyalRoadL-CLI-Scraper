@@ -1,0 +1,13 @@
+{
+  "footer": {
+    "height": ".75in",
+    "contents": {
+      "default": "<div style='float: right; padding-top: 5;'><span style='color: #808080;'>{{page}}/{{pages}}</span></div>"
+    }
+  },
+  "border": {
+    "top": ".5in",
+    "right": ".5in",
+    "left": ".5in"
+  }
+}
