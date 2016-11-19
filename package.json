@@ -1,7 +1,7 @@
 {
-  "name": "RoyalRoadL-CLI-Scraper",
+  "name": "rrl-scraper",
   "version": "0.0.1",
-  "description": "Scraper CLI RRL",
+  "description": "Royalroadl.com Fiction & chapter scraper",
   "main": "index.js",
   "author": "Daniel Kezerashvili",
   "license": "ISC",
