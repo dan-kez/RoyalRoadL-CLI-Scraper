@@ -1,0 +1,18 @@
+.page {
+  page-break-before: always;
+}
+
+table {
+  background: #004b7a;
+  margin: 10px auto;
+  width: 90%;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  border-collapse: separate;
+  border-spacing: 2px; }
+  table td {
+    margin: 3px;
+    padding: 5px;
+    color: #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background: rgba(0, 0, 0, 0.1); }
