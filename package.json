@@ -1,6 +1,6 @@
 {
   "name": "rrl-scraper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Royalroadl.com Fiction & chapter scraper",
   "main": "index.js",
   "author": "Daniel Kezerashvili",

@@ -8,8 +8,7 @@ There are a lot of niceties that could be implemented. Additional query paramete
 
 ## Installation
 ```
-git clone https://github.com/dmk255/RoyalRoadL-CLI-Scraper.git
-cd RoyalRoadL-CLI-Scraper && npm install -g
+npm install -g rrl-scraper
 ```
 
 The CLI should now be accessible via command `rrl-scraper`
@@ -26,3 +25,7 @@ Both id's can be found in RRL's url.
 
 ## Development
 Feel free to make improvements!
+```
+git clone https://github.com/dmk255/RoyalRoadL-CLI-Scraper.git
+cd RoyalRoadL-CLI-Scraper && npm link
+```
