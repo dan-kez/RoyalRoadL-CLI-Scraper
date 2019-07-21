@@ -5,6 +5,8 @@
 /* Avoid adding ID selector rules in this style sheet, since they could
  * inadvertently match elements in the article content. */
 
+// Making this a module to get around importing shenanigans with typescript
+export default `
 body {
   padding: 64px 51px;
 }
@@ -696,7 +698,7 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
 .moz-reader-content img.emoji {
   display: inline-block;
   border-width: 0;
-  /* height: auto is implied from `.moz-reader-content *` rule. */
+  /* height: auto is implied from \`.moz-reader-content *\` rule. */
   width: 1em;
   margin: 0 .07em;
   padding: 0;
@@ -705,3 +707,4 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
 .reader-show-element {
   display: initial;
 }
+`;

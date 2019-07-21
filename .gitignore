@@ -78,3 +78,5 @@ typings/
 # NVM environment
 .nvmrc
 
+# Build
+lib
