@@ -9,5 +9,6 @@
     "top": ".5in",
     "right": ".5in",
     "left": ".5in"
-  }
+  },
+  "timeout": 60000
 }
