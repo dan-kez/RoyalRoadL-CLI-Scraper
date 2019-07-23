@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import program from 'commander';
 import fictionProcessor from './fictionProcessor';
 import writeFiles from './writeFiles';
