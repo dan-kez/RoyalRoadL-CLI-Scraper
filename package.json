@@ -1,10 +1,13 @@
 {
   "name": "rrl-scraper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Daniel Kezerashvili",
   "license": "MIT",
+  "files": [
+    "./lib"
+  ],
   "dependencies": {
     "commander": "^2.20.0",
     "html-minifier": "^4.0.0",
@@ -14,8 +17,8 @@
     "readability": "git+https://github.com/mozilla/readability.git"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/dan-kez/RoyalRoadL-CLI-Scraper.git"
+    "type": "git",
+    "url": "https://github.com/dan-kez/RoyalRoadL-CLI-Scraper.git"
   },
   "bin": {
     "rrl-scraper": "./lib/index.js"
