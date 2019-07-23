@@ -1,28 +1,41 @@
 {
   "name": "rrl-scraper",
-  "version": "0.0.2",
-  "description": "Royalroadl.com Fiction & chapter scraper",
-  "main": "index.js",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "Daniel Kezerashvili",
-  "license": "ISC",
-  "bin": {
-    "rrl-scraper": "./index.js"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "html-minifier": "^4.0.0",
+    "html-pdf": "^2.2.0",
+    "jsdom": "^15.1.1",
+    "progress": "^2.0.3",
+    "readability": "git+https://github.com/mozilla/readability.git"
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/dmk255/RoyalRoadL-CLI-Scraper.git"
+    "url" : "https://github.com/dan-kez/RoyalRoadL-CLI-Scraper.git"
   },
-  "dependencies": {
-    "bluebird": "^3.4.6",
-    "cheerio": "^0.22.0",
-    "commander": "^2.9.0",
-    "html-pdf": "^2.1.0",
-    "request": "^2.79.0"
+  "bin": {
+    "rrl-scraper": "./lib/index.js"
   },
   "devDependencies": {
-    "eslint": "^3.10.2",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1"
+    "@types/html-minifier": "^3.5.3",
+    "@types/html-pdf": "^2.1.2",
+    "@types/jsdom": "^12.2.4",
+    "@types/progress": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
   }
 }
